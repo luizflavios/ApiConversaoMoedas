@@ -18,6 +18,11 @@ public class MVCConversorController {
 	@Autowired
 	private ConversorService conversorService;
 	
+	@GetMapping("/")
+	public String index() {
+		return "index"; 
+	}
+	
 	@GetMapping("/convert")
 	public ModelAndView converter(@RequestParam("valor") String valor) {
 		ModelAndView modelAndView = new ModelAndView("index");

@@ -1,25 +1,23 @@
-package br.com.service;
+package br.com.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import br.com.model.Moeda;
-
 public class Cotacao {
 	
-	@JsonProperty("USDBRL")
-	private Moeda moeda;
+	@JsonProperty("USD")
+	private Moeda USD;
 
 	public Moeda getMoeda() {
-		return moeda;
+		return USD;
 	}
 
 	public void setMoeda(Moeda moeda) {
-		this.moeda = moeda;
+		this.USD = moeda;
 	}
 
 	@Override
 	public String toString() {
-		return "Cotacao [moeda=" + moeda + "]";
+		return "Cotacao [moeda=" + USD + "]";
 	}
 	
 	
